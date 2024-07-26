@@ -9,23 +9,67 @@
 /* Begin PBXBuildFile section */
 		7D3AD06F2C3AEA8F00B5BC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD06E2C3AEA8F00B5BC6A /* AppDelegate.swift */; };
 		7D3AD0712C3AEA8F00B5BC6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0702C3AEA8F00B5BC6A /* SceneDelegate.swift */; };
-		7D3AD0732C3AEA8F00B5BC6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0722C3AEA8F00B5BC6A /* ViewController.swift */; };
-		7D3AD0762C3AEA8F00B5BC6A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7D3AD0752C3AEA8F00B5BC6A /* Base */; };
 		7D3AD0792C3AEA8F00B5BC6A /* NotesClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0772C3AEA8F00B5BC6A /* NotesClone.xcdatamodeld */; };
 		7D3AD07B2C3AEA9000B5BC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3AD07A2C3AEA9000B5BC6A /* Assets.xcassets */; };
 		7D3AD07E2C3AEA9000B5BC6A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7D3AD07D2C3AEA9000B5BC6A /* Base */; };
+		7D3AD0872C3AEBC600B5BC6A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0862C3AEBC600B5BC6A /* HomeViewController.swift */; };
+		7D3AD0902C3B01EC00B5BC6A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD08F2C3B01EC00B5BC6A /* CoreDataManager.swift */; };
+		7D3AD0922C3B020C00B5BC6A /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0912C3B020C00B5BC6A /* NoteManager.swift */; };
+		7D3AD09D2C3B036600B5BC6A /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD09C2C3B036600B5BC6A /* Date+Ext.swift */; };
+		7D3AD0A12C3B04D500B5BC6A /* NoteDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0A02C3B04D500B5BC6A /* NoteDetailsTableViewCell.swift */; };
+		7D3AD0A32C3B082A00B5BC6A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0A22C3B082A00B5BC6A /* UIView+Ext.swift */; };
+		7D3AD0A62C3B144700B5BC6A /* BlurryBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AD0A52C3B144700B5BC6A /* BlurryBackgroundView.swift */; };
+		7D45B68E2C41C88C006FDDE5 /* indexPathFromIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D45B68D2C41C88C006FDDE5 /* indexPathFromIdentifier.swift */; };
+		7D650FEF2C52E12E00CBB73E /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D650FED2C52E12E00CBB73E /* Note+CoreDataClass.swift */; };
+		7D650FF02C52E12E00CBB73E /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D650FEE2C52E12E00CBB73E /* Note+CoreDataProperties.swift */; };
+		7D65B8052C48008000789412 /* TextFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D65B8042C48008000789412 /* TextFormatting.swift */; };
+		7D65B8072C4801E000789412 /* FormatTextContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D65B8062C4801E000789412 /* FormatTextContainerView.swift */; };
+		7D6628D92C4BF78E006F1E8C /* FormattedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6628D82C4BF78E006F1E8C /* FormattedTextView.swift */; };
+		7D6628DD2C4BFE01006F1E8C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6628DC2C4BFE01006F1E8C /* UIFont.swift */; };
+		7D9895F72C3DA37100145D44 /* NotesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895F62C3DA37100145D44 /* NotesTableViewDataSource.swift */; };
+		7D9895F92C3DA38C00145D44 /* NotesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895F82C3DA38C00145D44 /* NotesTableViewDelegate.swift */; };
+		7D9896052C3EEA0300145D44 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9896042C3EEA0300145D44 /* CollapsibleTableViewHeader.swift */; };
+		7DABB9AF2C431E3B0076B2CB /* NoteDetailsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9AE2C431E3B0076B2CB /* NoteDetailsToolbarView.swift */; };
+		7DABB9B12C45BB820076B2CB /* FormatModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9B02C45BB820076B2CB /* FormatModalViewController.swift */; };
+		7DABB9B32C45E3C90076B2CB /* HomeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9B22C45E3C90076B2CB /* HomeFooterView.swift */; };
+		7DABB9B52C45E4160076B2CB /* FormatTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9B42C45E4160076B2CB /* FormatTextSizeView.swift */; };
+		7DABB9B72C45F7710076B2CB /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9B62C45F7710076B2CB /* UIColor+Ext.swift */; };
+		7DDAC70F2C3C5FC40091718B /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDAC70E2C3C5FC40091718B /* NotesViewModel.swift */; };
+		7DDAC7112C3C810A0091718B /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDAC7102C3C810A0091718B /* NoteDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D3AD06B2C3AEA8F00B5BC6A /* NotesClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3AD06E2C3AEA8F00B5BC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D3AD0702C3AEA8F00B5BC6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D3AD0722C3AEA8F00B5BC6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D3AD0752C3AEA8F00B5BC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D3AD0782C3AEA8F00B5BC6A /* NotesClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesClone.xcdatamodel; sourceTree = "<group>"; };
 		7D3AD07A2C3AEA9000B5BC6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D3AD07D2C3AEA9000B5BC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D3AD07F2C3AEA9000B5BC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3AD0862C3AEBC600B5BC6A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7D3AD08F2C3B01EC00B5BC6A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7D3AD0912C3B020C00B5BC6A /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
+		7D3AD09C2C3B036600B5BC6A /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		7D3AD0A02C3B04D500B5BC6A /* NoteDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		7D3AD0A22C3B082A00B5BC6A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		7D3AD0A52C3B144700B5BC6A /* BlurryBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurryBackgroundView.swift; sourceTree = "<group>"; };
+		7D45B68D2C41C88C006FDDE5 /* indexPathFromIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexPathFromIdentifier.swift; sourceTree = "<group>"; };
+		7D650FED2C52E12E00CBB73E /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7D650FEE2C52E12E00CBB73E /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7D65B8042C48008000789412 /* TextFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatting.swift; sourceTree = "<group>"; };
+		7D65B8062C4801E000789412 /* FormatTextContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTextContainerView.swift; sourceTree = "<group>"; };
+		7D6628D82C4BF78E006F1E8C /* FormattedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedTextView.swift; sourceTree = "<group>"; };
+		7D6628DC2C4BFE01006F1E8C /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		7D9895F62C3DA37100145D44 /* NotesTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewDataSource.swift; sourceTree = "<group>"; };
+		7D9895F82C3DA38C00145D44 /* NotesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewDelegate.swift; sourceTree = "<group>"; };
+		7D9896042C3EEA0300145D44 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		7DABB9AE2C431E3B0076B2CB /* NoteDetailsToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsToolbarView.swift; sourceTree = "<group>"; };
+		7DABB9B02C45BB820076B2CB /* FormatModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatModalViewController.swift; sourceTree = "<group>"; };
+		7DABB9B22C45E3C90076B2CB /* HomeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFooterView.swift; sourceTree = "<group>"; };
+		7DABB9B42C45E4160076B2CB /* FormatTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTextSizeView.swift; sourceTree = "<group>"; };
+		7DABB9B62C45F7710076B2CB /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		7DDAC70E2C3C5FC40091718B /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		7DDAC7102C3C810A0091718B /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +102,158 @@
 		7D3AD06D2C3AEA8F00B5BC6A /* NotesClone */ = {
 			isa = PBXGroup;
 			children = (
+				7D3AD0772C3AEA8F00B5BC6A /* NotesClone.xcdatamodeld */,
 				7D3AD06E2C3AEA8F00B5BC6A /* AppDelegate.swift */,
 				7D3AD0702C3AEA8F00B5BC6A /* SceneDelegate.swift */,
-				7D3AD0722C3AEA8F00B5BC6A /* ViewController.swift */,
-				7D3AD0742C3AEA8F00B5BC6A /* Main.storyboard */,
-				7D3AD07A2C3AEA9000B5BC6A /* Assets.xcassets */,
-				7D3AD07C2C3AEA9000B5BC6A /* LaunchScreen.storyboard */,
+				7D3AD0882C3AEC8800B5BC6A /* Resources */,
+				7D3AD08E2C3B01D400B5BC6A /* Managers */,
+				7D3AD08D2C3B01C700B5BC6A /* Models */,
+				7DDAC70D2C3C5F9F0091718B /* ViewModels */,
+				7D3AD09F2C3B04A700B5BC6A /* UI */,
+				7D3AD0852C3AEAF300B5BC6A /* Controllers */,
+				7D3AD09B2C3B035700B5BC6A /* Utilities */,
 				7D3AD07F2C3AEA9000B5BC6A /* Info.plist */,
-				7D3AD0772C3AEA8F00B5BC6A /* NotesClone.xcdatamodeld */,
 			);
 			path = NotesClone;
+			sourceTree = "<group>";
+		};
+		7D3AD0852C3AEAF300B5BC6A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D9895F42C3D8F2A00145D44 /* Home */,
+				7D9895F52C3D8F3000145D44 /* NoteDetails */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D3AD0882C3AEC8800B5BC6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D3AD07A2C3AEA9000B5BC6A /* Assets.xcassets */,
+				7D3AD07C2C3AEA9000B5BC6A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7D3AD08D2C3B01C700B5BC6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D650FED2C52E12E00CBB73E /* Note+CoreDataClass.swift */,
+				7D650FEE2C52E12E00CBB73E /* Note+CoreDataProperties.swift */,
+				7D65B8042C48008000789412 /* TextFormatting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D3AD08E2C3B01D400B5BC6A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7D3AD08F2C3B01EC00B5BC6A /* CoreDataManager.swift */,
+				7D3AD0912C3B020C00B5BC6A /* NoteManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7D3AD09B2C3B035700B5BC6A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7D45B68C2C41C86F006FDDE5 /* IndexPath */,
+				7D3AD09E2C3B045000B5BC6A /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7D3AD09E2C3B045000B5BC6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D3AD0A22C3B082A00B5BC6A /* UIView+Ext.swift */,
+				7D3AD09C2C3B036600B5BC6A /* Date+Ext.swift */,
+				7DABB9B62C45F7710076B2CB /* UIColor+Ext.swift */,
+				7D6628DC2C4BFE01006F1E8C /* UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D3AD09F2C3B04A700B5BC6A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7DABB9A92C42EABC0076B2CB /* TextViews */,
+				7DABB9AD2C431DFA0076B2CB /* TableViews */,
+				7D3AD0A42C3B0CC200B5BC6A /* Cells */,
+				7D3AD0A72C3B144E00B5BC6A /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7D3AD0A42C3B0CC200B5BC6A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7D3AD0A02C3B04D500B5BC6A /* NoteDetailsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7D3AD0A72C3B144E00B5BC6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DABB9B22C45E3C90076B2CB /* HomeFooterView.swift */,
+				7DABB9AE2C431E3B0076B2CB /* NoteDetailsToolbarView.swift */,
+				7DABB9B42C45E4160076B2CB /* FormatTextSizeView.swift */,
+				7D65B8062C4801E000789412 /* FormatTextContainerView.swift */,
+				7D3AD0A52C3B144700B5BC6A /* BlurryBackgroundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D45B68C2C41C86F006FDDE5 /* IndexPath */ = {
+			isa = PBXGroup;
+			children = (
+				7D45B68D2C41C88C006FDDE5 /* indexPathFromIdentifier.swift */,
+			);
+			path = IndexPath;
+			sourceTree = "<group>";
+		};
+		7D9895F42C3D8F2A00145D44 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7D3AD0862C3AEBC600B5BC6A /* HomeViewController.swift */,
+				7D9895F62C3DA37100145D44 /* NotesTableViewDataSource.swift */,
+				7D9895F82C3DA38C00145D44 /* NotesTableViewDelegate.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7D9895F52C3D8F3000145D44 /* NoteDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7DDAC7102C3C810A0091718B /* NoteDetailsViewController.swift */,
+				7DABB9B02C45BB820076B2CB /* FormatModalViewController.swift */,
+			);
+			path = NoteDetails;
+			sourceTree = "<group>";
+		};
+		7DABB9A92C42EABC0076B2CB /* TextViews */ = {
+			isa = PBXGroup;
+			children = (
+				7D6628D82C4BF78E006F1E8C /* FormattedTextView.swift */,
+			);
+			path = TextViews;
+			sourceTree = "<group>";
+		};
+		7DABB9AD2C431DFA0076B2CB /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				7D9896042C3EEA0300145D44 /* CollapsibleTableViewHeader.swift */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		7DDAC70D2C3C5F9F0091718B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7DDAC70E2C3C5FC40091718B /* NotesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +316,6 @@
 			files = (
 				7D3AD07B2C3AEA9000B5BC6A /* Assets.xcassets in Resources */,
 				7D3AD07E2C3AEA9000B5BC6A /* Base in Resources */,
-				7D3AD0762C3AEA8F00B5BC6A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +326,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D3AD0732C3AEA8F00B5BC6A /* ViewController.swift in Sources */,
+				7DABB9B52C45E4160076B2CB /* FormatTextSizeView.swift in Sources */,
+				7D9895F72C3DA37100145D44 /* NotesTableViewDataSource.swift in Sources */,
+				7D9895F92C3DA38C00145D44 /* NotesTableViewDelegate.swift in Sources */,
+				7D3AD09D2C3B036600B5BC6A /* Date+Ext.swift in Sources */,
+				7D3AD0A32C3B082A00B5BC6A /* UIView+Ext.swift in Sources */,
+				7D65B8072C4801E000789412 /* FormatTextContainerView.swift in Sources */,
+				7D650FEF2C52E12E00CBB73E /* Note+CoreDataClass.swift in Sources */,
+				7D650FF02C52E12E00CBB73E /* Note+CoreDataProperties.swift in Sources */,
+				7D9896052C3EEA0300145D44 /* CollapsibleTableViewHeader.swift in Sources */,
+				7D3AD0A62C3B144700B5BC6A /* BlurryBackgroundView.swift in Sources */,
 				7D3AD0792C3AEA8F00B5BC6A /* NotesClone.xcdatamodeld in Sources */,
+				7DABB9B72C45F7710076B2CB /* UIColor+Ext.swift in Sources */,
+				7DABB9B32C45E3C90076B2CB /* HomeFooterView.swift in Sources */,
+				7D3AD0A12C3B04D500B5BC6A /* NoteDetailsTableViewCell.swift in Sources */,
+				7DDAC7112C3C810A0091718B /* NoteDetailsViewController.swift in Sources */,
+				7DDAC70F2C3C5FC40091718B /* NotesViewModel.swift in Sources */,
+				7D65B8052C48008000789412 /* TextFormatting.swift in Sources */,
 				7D3AD06F2C3AEA8F00B5BC6A /* AppDelegate.swift in Sources */,
 				7D3AD0712C3AEA8F00B5BC6A /* SceneDelegate.swift in Sources */,
+				7DABB9AF2C431E3B0076B2CB /* NoteDetailsToolbarView.swift in Sources */,
+				7D6628D92C4BF78E006F1E8C /* FormattedTextView.swift in Sources */,
+				7DABB9B12C45BB820076B2CB /* FormatModalViewController.swift in Sources */,
+				7D3AD0922C3B020C00B5BC6A /* NoteManager.swift in Sources */,
+				7D6628DD2C4BFE01006F1E8C /* UIFont.swift in Sources */,
+				7D45B68E2C41C88C006FDDE5 /* indexPathFromIdentifier.swift in Sources */,
+				7D3AD0902C3B01EC00B5BC6A /* CoreDataManager.swift in Sources */,
+				7D3AD0872C3AEBC600B5BC6A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7D3AD0742C3AEA8F00B5BC6A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D3AD0752C3AEA8F00B5BC6A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D3AD07C2C3AEA9000B5BC6A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +501,6 @@
 				INFOPLIST_FILE = NotesClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +528,6 @@
 				INFOPLIST_FILE = NotesClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
