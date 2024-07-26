@@ -40,6 +40,8 @@ This project is a clone of the Apple Notes app created for educational purposes 
   <img src="Screenshots/header-2.png" width="30%">
 </p>
 
+**Please note that** any lag observed in the animations below is a result of the GIF's frame rate limitations (FPS) and does not reflect the actual performance of the application, which runs smoothly without any lags.
+
 ### Creating, Reading, Updating and Deleting a Note
 <p float="center">
   <img src="Screenshots/createNote.gif" width="30%"> &nbsp;&nbsp;
@@ -47,14 +49,10 @@ This project is a clone of the Apple Notes app created for educational purposes 
   <img src="Screenshots/deleteNote.gif" width="30%">
 </p>
 
-### Pinning a Note
-<img src="Screenshots/pinNote.gif" width="30%"> 
+| Pinning a Note | Search for a Note | Text Formatting |
+| --- | --- | --- |
+| <img src="Screenshots/pinNote.gif" width="100%"> | <img src="Screenshots/searchNote.gif" width="100%">  | <img src="Screenshots/textFormation.gif" width="100%">  | 
 
-### Searching for a Note
-<img src="Screenshots/searchNote.gif" width="30%"> 
-
-### Text Formatting
-<img src="Screenshots/textFormation.gif" width="30%"> 
 
 ### The Real Apple Notes App - Comparison
 <p float="center">
