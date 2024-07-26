@@ -41,10 +41,24 @@ This project is a clone of the Apple Notes app created for educational purposes 
 </p>
 
 ### Creating, Reading, Updating and Deleting a Note
+<p float="center">
+  <img src="Screenshots/createNote.gif" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/readUpdateNote.gif" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/deleteNote.gif" width="30%">
+</p>
 
 ### Pinning a Note
+<img src="Screenshots/pinNote.gif" width="30%"> 
 
 ### Searching for a Note
+<img src="Screenshots/searchNote.gif" width="30%"> 
 
 ### Text Formatting
+<img src="Screenshots/textFormation.gif" width="30%"> 
 
+### The Real Apple Notes App - Comparison
+<p float="center">
+  <img src="Screenshots/appleNotesHome.PNG" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/appleNotesDetail.PNG" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/appleNotesFormatting.PNG" width="30%">
+</p>
