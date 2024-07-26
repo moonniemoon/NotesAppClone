@@ -2,6 +2,8 @@
 
 Ngl, got bored and decided to clone some apps, so here's the classic **Notes** app, cuz why not... Oor maybe my simulators threatened me to create it for them as they wanna feel more... real. Win-win ig. 🫡
 
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmoonniemoon%2FNotesAppClone&label=Views&countColor=%23263759&style=flat&labelStyle=none)
+
 ## Keywords
 * Swift 5
 * UIKit (Programmatic UI)
