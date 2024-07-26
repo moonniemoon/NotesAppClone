@@ -91,9 +91,7 @@ extension FormattedTextView {
         var font: UIFont = UIFont.systemFont(ofSize: finalFontSize)
         
         if isBold && isItalic {
-            let boldFont = UIFont.systemFont(ofSize: finalFontSize, weight: .bold)
-            let fontDescriptor = boldFont.fontDescriptor.withSymbolicTraits([.traitItalic])
-            font = UIFont(descriptor: fontDescriptor!, size: finalFontSize)
+            font = UIFont(descriptor: font.fontDescriptor.withSymbolicTraits([.traitBold, .traitItalic])!, size: finalFontSize)
         } else if isBold {
             font = UIFont.systemFont(ofSize: finalFontSize, weight: .bold)
         } else if isItalic {
@@ -110,19 +108,18 @@ extension FormattedTextView {
         }
         
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 4
+        paragraphStyle.lineSpacing = 5
         attributes[.paragraphStyle] = paragraphStyle
         
-        if let range = range {
-            self.textStorage.beginEditing()
-            self.textStorage.setAttributes(attributes, range: range)
-            self.textStorage.endEditing()
+        self.textStorage.beginEditing()
+        let effectiveRange = range ?? (self.selectedRange.length > 0 ? self.selectedRange : nil)
 
-            self.typingAttributes = attributes
-
-        } else {
-            self.typingAttributes = attributes
+        if let rangeToApply = effectiveRange {
+            self.textStorage.setAttributes(attributes, range: rangeToApply)
         }
+        self.textStorage.endEditing()
+        
+        self.typingAttributes = attributes
     }
     
     func updateFormattingForRange(fontSize: CGFloat? = nil, isBold: Bool, isItalic: Bool, isUnderlined: Bool) {
