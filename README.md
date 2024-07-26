@@ -31,3 +31,20 @@ Ngl, got bored and decided to clone some apps, so here's the classic **Notes** a
 
 ## Disclaimer
 This project is a clone of the Apple Notes app created for educational purposes only. It is not affiliated with or endorsed by Apple Inc. All rights to the original Notes app belong to Apple Inc.
+
+## Demonstration and Comparison 
+
+<p float="center">
+  <img src="Screenshots/header-0.png" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/header-1.png" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/header-2.png" width="30%">
+</p>
+
+### Creating, Reading, Updating and Deleting a Note
+
+### Pinning a Note
+
+### Searching for a Note
+
+### Text Formatting
+
