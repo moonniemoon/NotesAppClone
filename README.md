@@ -31,3 +31,32 @@ Ngl, got bored and decided to clone some apps, so here's the classic **Notes** a
 
 ## Disclaimer
 This project is a clone of the Apple Notes app created for educational purposes only. It is not affiliated with or endorsed by Apple Inc. All rights to the original Notes app belong to Apple Inc.
+
+## Demonstration and Comparison 
+
+<p float="center">
+  <img src="Screenshots/header-0.png" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/header-1.png" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/header-2.png" width="30%">
+</p>
+
+**Please note that** any lag observed in the animations below is a result of the GIF's frame rate limitations (FPS) and does not reflect the actual performance of the application, which runs smoothly without any lags.
+
+### Creating, Reading, Updating and Deleting a Note
+<p float="center">
+  <img src="Screenshots/createNote.gif" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/readUpdateNote.gif" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/deleteNote.gif" width="30%">
+</p>
+
+| Pinning a Note | Search for a Note | Text Formatting |
+| --- | --- | --- |
+| <img src="Screenshots/pinNote.gif" width="100%"> | <img src="Screenshots/searchNote.gif" width="100%">  | <img src="Screenshots/textFormation.gif" width="100%">  | 
+
+
+### The Real Apple Notes App - Comparison
+<p float="center">
+  <img src="Screenshots/appleNotesHome.PNG" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/appleNotesDetail.PNG" width="30%"> &nbsp;&nbsp;
+  <img src="Screenshots/appleNotesFormatting.PNG" width="30%">
+</p>
