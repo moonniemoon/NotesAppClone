@@ -12,7 +12,6 @@ class NoteDetailsViewController: UIViewController {
     
     var note: Note!
     private var formattedTextView: FormattedTextView!
-    private let toolbar = NoteDetailsToolbarView()
     private var firstLineChecked = false
     private var textViewBottomConstraint: NSLayoutConstraint!
     
@@ -31,7 +30,6 @@ class NoteDetailsViewController: UIViewController {
         navigationController?.navigationBar.standardAppearance.backgroundColor = .systemBackground
         
         configureTextView()
-        configureToolbar()
         
         if let attributetext = note.attributedText {
             formattedTextView.attributedText = attributetext
@@ -56,6 +54,9 @@ class NoteDetailsViewController: UIViewController {
     
     private func configureTextView() {
         formattedTextView = FormattedTextView()
+        
+        let toolbar = NoteToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 44), delegate: self)
+        formattedTextView.inputAccessoryView = toolbar
         formattedTextView.delegate = self
         view.addSubview(formattedTextView)
         formattedTextView.translatesAutoresizingMaskIntoConstraints = false
@@ -68,21 +69,6 @@ class NoteDetailsViewController: UIViewController {
             formattedTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             textViewBottomConstraint
         ])
-    }
-    
-    private func configureToolbar() {
-        toolbar.translatesAutoresizingMaskIntoConstraints = false
-        toolbar.delegate = self
-        view.addSubview(toolbar)
-        
-        NSLayoutConstraint.activate([
-            toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            toolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            toolbar.heightAnchor.constraint(equalToConstant: 44),
-            toolbar.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor)
-        ])
-        
-        toolbar.isHidden = true
     }
     
     private func showHideDoneBarButton() {
@@ -128,16 +114,14 @@ class NoteDetailsViewController: UIViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect {
             let keyboardHeight = keyboardFrame.height
-            textViewBottomConstraint.constant = -keyboardHeight - toolbar.frame.height
+            textViewBottomConstraint.constant = -keyboardHeight
             view.layoutIfNeeded()
         }
-        toolbar.isHidden = false
     }
     
     @objc func keyboardWillHide(notification: NSNotification) {
         textViewBottomConstraint.constant = 0
         view.layoutIfNeeded()
-        toolbar.isHidden = true
     }
     
     @objc func presentModalController() {
@@ -155,19 +139,21 @@ class NoteDetailsViewController: UIViewController {
     }
 }
 
-extension NoteDetailsViewController: NoteDetailsToolbarDelegate {
-    func didTapButton(action: NoteDetailsToolbarAction) {
-        switch action {
-        case .formatting:
-            presentModalController()  // To interact from presented with presenting - UITextView, in-view presentation can be implemented.
-        case .checklist:
-            print("pressed checklist button")
-        case .tablecells:
-            print("pressed tablecells button")
-        case .camera:
-            print("pressed camera button")
-        case .pencilkit:
-            print("pressed pencilkit button")
+extension NoteDetailsViewController: NoteToolbarDelegate {
+    func didTapToolbarButton(withTag tag: Int) {
+        switch tag {
+        case 0:
+            presentModalController()
+        case 1:
+            print("Pressed checklist button")
+        case 2:
+            print("Pressed table cells button")
+        case 3:
+            print("Pressed camera button")
+        case 4:
+            print("Pressed PencilKit button")
+        default:
+            return
         }
     }
 }

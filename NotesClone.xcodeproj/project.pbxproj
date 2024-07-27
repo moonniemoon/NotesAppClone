@@ -29,7 +29,7 @@
 		7D9895F72C3DA37100145D44 /* NotesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895F62C3DA37100145D44 /* NotesTableViewDataSource.swift */; };
 		7D9895F92C3DA38C00145D44 /* NotesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895F82C3DA38C00145D44 /* NotesTableViewDelegate.swift */; };
 		7D9896052C3EEA0300145D44 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9896042C3EEA0300145D44 /* CollapsibleTableViewHeader.swift */; };
-		7DABB9AF2C431E3B0076B2CB /* NoteDetailsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9AE2C431E3B0076B2CB /* NoteDetailsToolbarView.swift */; };
+		7DA6FF0B2C55512600FE921B /* NoteToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA6FF0A2C55512600FE921B /* NoteToolbar.swift */; };
 		7DABB9B12C45BB820076B2CB /* FormatModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9B02C45BB820076B2CB /* FormatModalViewController.swift */; };
 		7DABB9B32C45E3C90076B2CB /* HomeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9B22C45E3C90076B2CB /* HomeFooterView.swift */; };
 		7DABB9B52C45E4160076B2CB /* FormatTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABB9B42C45E4160076B2CB /* FormatTextSizeView.swift */; };
@@ -63,7 +63,7 @@
 		7D9895F62C3DA37100145D44 /* NotesTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewDataSource.swift; sourceTree = "<group>"; };
 		7D9895F82C3DA38C00145D44 /* NotesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewDelegate.swift; sourceTree = "<group>"; };
 		7D9896042C3EEA0300145D44 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
-		7DABB9AE2C431E3B0076B2CB /* NoteDetailsToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsToolbarView.swift; sourceTree = "<group>"; };
+		7DA6FF0A2C55512600FE921B /* NoteToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteToolbar.swift; sourceTree = "<group>"; };
 		7DABB9B02C45BB820076B2CB /* FormatModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatModalViewController.swift; sourceTree = "<group>"; };
 		7DABB9B22C45E3C90076B2CB /* HomeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFooterView.swift; sourceTree = "<group>"; };
 		7DABB9B42C45E4160076B2CB /* FormatTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTextSizeView.swift; sourceTree = "<group>"; };
@@ -177,6 +177,7 @@
 		7D3AD09F2C3B04A700B5BC6A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7DA6FF092C55510E00FE921B /* Toolbar */,
 				7DABB9A92C42EABC0076B2CB /* TextViews */,
 				7DABB9AD2C431DFA0076B2CB /* TableViews */,
 				7D3AD0A42C3B0CC200B5BC6A /* Cells */,
@@ -197,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				7DABB9B22C45E3C90076B2CB /* HomeFooterView.swift */,
-				7DABB9AE2C431E3B0076B2CB /* NoteDetailsToolbarView.swift */,
 				7DABB9B42C45E4160076B2CB /* FormatTextSizeView.swift */,
 				7D65B8062C4801E000789412 /* FormatTextContainerView.swift */,
 				7D3AD0A52C3B144700B5BC6A /* BlurryBackgroundView.swift */,
@@ -230,6 +230,14 @@
 				7DABB9B02C45BB820076B2CB /* FormatModalViewController.swift */,
 			);
 			path = NoteDetails;
+			sourceTree = "<group>";
+		};
+		7DA6FF092C55510E00FE921B /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				7DA6FF0A2C55512600FE921B /* NoteToolbar.swift */,
+			);
+			path = Toolbar;
 			sourceTree = "<group>";
 		};
 		7DABB9A92C42EABC0076B2CB /* TextViews */ = {
@@ -343,9 +351,9 @@
 				7DDAC7112C3C810A0091718B /* NoteDetailsViewController.swift in Sources */,
 				7DDAC70F2C3C5FC40091718B /* NotesViewModel.swift in Sources */,
 				7D65B8052C48008000789412 /* TextFormatting.swift in Sources */,
+				7DA6FF0B2C55512600FE921B /* NoteToolbar.swift in Sources */,
 				7D3AD06F2C3AEA8F00B5BC6A /* AppDelegate.swift in Sources */,
 				7D3AD0712C3AEA8F00B5BC6A /* SceneDelegate.swift in Sources */,
-				7DABB9AF2C431E3B0076B2CB /* NoteDetailsToolbarView.swift in Sources */,
 				7D6628D92C4BF78E006F1E8C /* FormattedTextView.swift in Sources */,
 				7DABB9B12C45BB820076B2CB /* FormatModalViewController.swift in Sources */,
 				7D3AD0922C3B020C00B5BC6A /* NoteManager.swift in Sources */,

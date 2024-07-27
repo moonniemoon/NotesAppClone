@@ -144,7 +144,6 @@ extension HomeViewController: UISearchBarDelegate, UISearchResultsUpdating {
     }
     
     func search(_ query: String) {
-        print("query: \(query)")
         notesViewModel.filterNotes(with: query)
     }
 }

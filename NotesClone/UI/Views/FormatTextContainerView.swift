@@ -17,7 +17,7 @@ enum TextAttributeButtonStyle {
     var attributedString: NSAttributedString {
         switch self {
         case .bold:
-            return attributedString(for: "B", attributes: [.font: UIFont.boldSystemFont(ofSize: 18)])
+            return attributedString(for: "B", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .bold)])
         case .italic:
             return attributedString(for: "I", attributes: [.font: UIFont.italicSystemFont(ofSize: 18)])
         case .underlined:
