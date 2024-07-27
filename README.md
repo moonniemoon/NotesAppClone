@@ -12,7 +12,7 @@ Ngl, got bored and decided to clone some apps, so here's the classic **Notes** a
 * NSFetchedResultsController
 * UITableView, UITableViewCell, UITableViewDelegate, UITableViewDataSource, UITableViewHeaderFooterView
 * UIContextualAction, UIContextMenuConfiguration
-* UITextView, NSAttributedString
+* UITextView, NSAttributedString, UIToolbar
 
 ## Features
 - **CRUD a Note**: Create, Read, Update, Delete functionality for notes.
